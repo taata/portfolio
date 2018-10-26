@@ -1,16 +1,16 @@
 import React from 'react';
-import { Container, Row, Col, Parallax } from 'react-materialize';
-import imgBanner from '../../images/banner2.JPG';
-
+import imgBanner from '../../images/banner.jpg';
+import { Parallax } from 'react-scroll-parallax';
 
 const Banner = () => (
-    <Container>
-        <Row>
-            <Col m={12} className="center-div">
-                <img src={imgBanner} alt='Banner' className='img-banner' />
-            </Col>
-        </Row>
-    </Container>
+    <Parallax
+        offsetYMin={-0}
+        offsetYMax={0}
+        className='parallax-banner'
+    >
+        <img src={imgBanner} />
+    </Parallax>
+
 );
 
 export default Banner;
