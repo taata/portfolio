@@ -7,7 +7,10 @@ body{
 
 .parallax-banner .parallax-inner{
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .parallax-banner .parallax-inner img{
@@ -16,11 +19,11 @@ body{
 
 .box-photo-me{
     width: 100%;
-    position: relative;
-    margin: 0 auto;
-    display: block;
+    position: absolute;
+    bottom: -340px;
+    left: 0;
 }
-
+  
 .box-photo-me img{
     width: 150px;
     height: 150px;
