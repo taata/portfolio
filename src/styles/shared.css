@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Niramit:200,300,400,600');
+
+body{
+    font-family: 'Niramit', sans-serif;
+    margin: 0;
+}
+
+.parallax-banner, .parallax-about, .parallax-album{
+    position: relative;
+    height: 100vh;
+}

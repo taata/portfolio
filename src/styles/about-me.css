@@ -1,0 +1,25 @@
+
+.box-photo-me{
+    width: 100%;
+    position: absolute;
+    bottom: -376px;
+    left: 0;
+}
+  
+.box-photo-me img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    border: 7px solid #4dabf5;
+}
+
+.box-text-me{
+    text-align: center;
+}
+
+.box-text-me p {
+    font-size: 18px;
+}

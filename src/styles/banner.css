@@ -1,0 +1,22 @@
+.parallax-banner .parallax-inner img{
+    width: 100%;
+}
+
+.parallax-banner .parallax-inner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-banner{
+    position: absolute;
+}
+
+.title-banner h3{
+    color: #ffffff;
+    font-weight: 100;
+    text-align: center;
+    font-weight: 200;
+}

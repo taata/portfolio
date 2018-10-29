@@ -1,0 +1,24 @@
+.title-album{
+    text-align: center;
+    color: #ffffff;
+    margin: 30px;
+    font-size: 34px;
+}
+
+.image-album{
+    width: 430px;
+/*     overflow: hidden;
+    -webkit-border-radius: 40px 10px 40px 0;
+    border-radius: 40px 10px 40px 0; */
+}
+
+.parallax-album .parallax-inner{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #099696;
+}
+
+.parallax-album .parallax-inner .container .row{
+    margin-bottom: 0;
+}

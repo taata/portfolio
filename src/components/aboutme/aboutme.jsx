@@ -13,13 +13,14 @@ const AboutMe = () => (
             <Row>
                 <Col s={12}>
                     <div className="box-photo-me">
-                        <img src={imgUser} className="responsive-img" />
+                        <img src={imgUser} className="responsive-img" alt="Tainá Renata Fotos" />
                         <div className="box-text-me">
                             <h3>
                                 Tainá
                         </h3>
                             <p> Front End Developer<br />
-                                Amante dos animais e natureza. Desenvolvedora por profissão e fotógrafa iniciante por hobby ♡
+                                Amante dos animais e natureza. Desenvolvedora por profissão e fotógrafa iniciante por hobby ♡<br />
+                                Texto ainda em construção... aguarde!
                         </p>
                         </div>
                     </div>
