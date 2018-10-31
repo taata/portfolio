@@ -4,29 +4,32 @@ import { Parallax } from 'react-scroll-parallax';
 const urlInstaEmbed = 'https://api.instagram.com/oembed/?url=http://instagr.am/p/';
 let linkPhotoOrigin = 'https://www.instagram.com/p/';
 const taken = '/?taken-by=tainarenatafotos';
-let linkPicture = '';
+let pictures = [];
+let urlsPictures = ['BpkrRH_Bc0_', 'BpXzSmTl9mp', 'BpS6taAlz4O', 'Bm9UIi1FidK', 'BmmYsIsFLNb', 'Bi7J0N-l5b1'];
 
 export default class Album extends Component {
     constructor() {
         super();
         this.state = {
-            picture: [],
+            pictures: [],
         };
     }
 
     componentDidMount() {
-        fetch(`${urlInstaEmbed}BpXzSmTl9mp`)
-            .then(results => {
-                return results.json();
-            }).then(data => {
-                let picture = data.thumbnail_url;
-                linkPicture = linkPhotoOrigin + 'BpXzSmTl9mp' + taken;
-                this.setState({ picture, linkPicture })
-            });
+        urlsPictures.forEach((param) => {
+            fetch(urlInstaEmbed + param)
+                .then(results => {
+                    return results.json();
+                }).then(data => {
+                    pictures.push(data.thumbnail_url);
+                    console.log('pictures: ', pictures);
+                    this.setState({ pictures })
+                });
+        })
     }
 
-
     render() {
+        const { pictures } = this.state;
         return (
             <Parallax
                 offsetYMin={-0}
@@ -35,11 +38,14 @@ export default class Album extends Component {
             >
                 <Container>
                     <Row>
-                        <Col s={6}>
-                            <a href={linkPicture}>
-                                <img src={this.state.picture} alt={linkPicture} className="image-album" />
-                            </a>
-                        </Col>
+                        {pictures.map(pic =>
+
+                            <Col s={6}>
+                                <a href={linkPhotoOrigin}>
+                                    <img src={pic} alt={pic} className="image-album" />
+                                </a>
+                            </Col>
+                        )}
                     </Row>
                 </Container>
             </Parallax>

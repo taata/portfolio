@@ -15,7 +15,7 @@
 .parallax-album .parallax-inner{
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: auto;
     background-color: #099696;
 }
 
