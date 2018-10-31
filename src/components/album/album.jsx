@@ -5,13 +5,15 @@ const urlInstaEmbed = 'https://api.instagram.com/oembed/?url=http://instagr.am/p
 let linkPhotoOrigin = 'https://www.instagram.com/p/';
 const taken = '/?taken-by=tainarenatafotos';
 let pictures = [];
-let urlsPictures = ['BpkrRH_Bc0_', 'BpXzSmTl9mp', 'BpS6taAlz4O', 'Bm9UIi1FidK', 'BmmYsIsFLNb', 'Bi7J0N-l5b1'];
+let linkPhoto = [];
+let urlsPictures = ['BoFbjh4lpcR', 'BjYcpZilbn_', 'BmrnJJKlYgT', 'Bm9UIi1FidK', 'BjKm7Q9FckE', 'Bi7J0N-l5b1'];
 
 export default class Album extends Component {
     constructor() {
         super();
         this.state = {
             pictures: [],
+            linkPhoto: []
         };
     }
 
@@ -21,8 +23,12 @@ export default class Album extends Component {
                 .then(results => {
                     return results.json();
                 }).then(data => {
-                    pictures.push(data.thumbnail_url);
+                    let urlComplete = linkPhotoOrigin + param;
+                    pictures.push(Object.assign(data, { urlComplete }));
                     console.log('pictures: ', pictures);
+                    //linkPhoto.push(linkPhotoOrigin + param);
+
+
                     this.setState({ pictures })
                 });
         })
@@ -40,9 +46,9 @@ export default class Album extends Component {
                     <Row>
                         {pictures.map(pic =>
 
-                            <Col s={6}>
-                                <a href={linkPhotoOrigin}>
-                                    <img src={pic} alt={pic} className="image-album" />
+                            <Col s={4} key={pic.media_id} className="col-images">
+                                <a href={pic.urlComplete}>
+                                    <img src={pic.thumbnail_url} alt={pic.title} className="image-album" />
                                 </a>
                             </Col>
                         )}

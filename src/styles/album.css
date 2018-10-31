@@ -5,14 +5,21 @@
     font-size: 34px;
 }
 
+.col-images{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
 .image-album{
-    width: 430px;
-/*     overflow: hidden;
-    -webkit-border-radius: 40px 10px 40px 0;
-    border-radius: 40px 10px 40px 0; */
+    width: 300px;
 }
 
 .parallax-album .parallax-inner{
+    padding: 50px 0 0;
     display: flex;
     align-items: center;
     height: auto;
@@ -21,4 +28,14 @@
 
 .parallax-album .parallax-inner .container .row{
     margin-bottom: 0;
+}
+
+.infos-pictures{
+    max-width: 200px;
+    background: #ffffff;
+}
+
+.infos-pictures p{
+    font-size: 18px;
+    line-height: 18px;
 }

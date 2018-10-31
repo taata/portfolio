@@ -1,19 +1,13 @@
 
 .box-photo-me{
     width: 100%;
-    position: absolute;
-    bottom: -376px;
-    left: 0;
+    display: block;
 }
   
 .box-photo-me img{
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
+    width: 400px;
     display: block;
-    border-radius: 50%;
-    position: relative;
-    border: 7px solid #4dabf5;
+    margin: 0 auto;
 }
 
 .box-text-me{

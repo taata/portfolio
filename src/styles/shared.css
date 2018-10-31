@@ -8,4 +8,7 @@ body{
 .parallax-banner, .parallax-about, .parallax-album{
     position: relative;
     height: 100vh;
+    display: block;
+    background: white;
+    padding: 40px 0;
 }
