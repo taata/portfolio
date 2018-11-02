@@ -3,9 +3,7 @@ import { Container, Row, Col } from 'react-materialize';
 import { Parallax } from 'react-scroll-parallax';
 const urlInstaEmbed = 'https://api.instagram.com/oembed/?url=http://instagr.am/p/';
 let linkPhotoOrigin = 'https://www.instagram.com/p/';
-const taken = '/?taken-by=tainarenatafotos';
 let pictures = [];
-let linkPhoto = [];
 let urlsPictures = ['BoFbjh4lpcR', 'BjYcpZilbn_', 'BmrnJJKlYgT', 'Bm9UIi1FidK', 'BjKm7Q9FckE', 'Bi7J0N-l5b1'];
 
 export default class Album extends Component {
@@ -25,10 +23,6 @@ export default class Album extends Component {
                 }).then(data => {
                     let urlComplete = linkPhotoOrigin + param;
                     pictures.push(Object.assign(data, { urlComplete }));
-                    console.log('pictures: ', pictures);
-                    //linkPhoto.push(linkPhotoOrigin + param);
-
-
                     this.setState({ pictures })
                 });
         })

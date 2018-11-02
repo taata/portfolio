@@ -13,17 +13,9 @@
     margin-bottom: 50px;
 }
 
-
 .image-album{
     width: 300px;
-}
-
-.parallax-album .parallax-inner{
-    padding: 50px 0 0;
-    display: flex;
-    align-items: center;
-    height: auto;
-    background-color: #099696;
+    border: 1px solid #fff;
 }
 
 .parallax-album .parallax-inner .container .row{

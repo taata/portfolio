@@ -2,18 +2,37 @@
 .box-photo-me{
     width: 100%;
     display: block;
+    position: relative;
 }
   
 .box-photo-me img{
-    width: 400px;
+    width: 500px;
     display: block;
     margin: 0 auto;
 }
 
 .box-text-me{
     text-align: center;
+    position: absolute;
+    background-color: #ffffff;
+    top: 161px;
+    width: 271px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    left: 388px;
+    padding: 33px 20px 24px;
+    line-height: 18px;
+    transition: 0.9s ease-out;
+}
+
+.box-text-me:hover{
+    background-color: #000000;
+    transition: 1.5s ease-in;
+    cursor: pointer;
+    color: white;
 }
 
 .box-text-me p {
-    font-size: 18px;
+    font-size: 18px;    
 }

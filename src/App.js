@@ -15,8 +15,11 @@ class App extends Component {
       <div>
         <ParallaxProvider>
           <Banner />
-          <AboutMe />
-          <Album />
+          <div class="line"></div>
+          <div class="background-sky">
+            <AboutMe />
+            <Album />
+          </div>
         </ParallaxProvider>
       </div>
     );

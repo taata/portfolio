@@ -7,8 +7,26 @@ body{
 
 .parallax-banner, .parallax-about, .parallax-album{
     position: relative;
-    height: 100vh;
     display: block;
-    background: white;
-    padding: 40px 0;
+}
+
+.background-sky{
+/*   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+100;Blue+Pipe+%232 */
+   /*  background: rgb(225,255,255); /* Old browsers 
+    background: linear-gradient(linear-gradient(to top, rgb(0, 0, 0) 0%,rgb(255, 255, 255) 75%)); */
+    background-image: url('../images/IMG_1335.jpg');
+    background-color: #081d36; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 50px 0 0;
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
