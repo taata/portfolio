@@ -1,3 +1,15 @@
+.parallax-album{
+    /*   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+100;Blue+Pipe+%232 */
+       /*  background: rgb(225,255,255); /* Old browsers 
+        background: linear-gradient(linear-gradient(to top, rgb(0, 0, 0) 0%,rgb(255, 255, 255) 75%)); */
+        background-image: url('../images/camera.png');
+        background-color: #ffffff;
+        background-repeat: repeat;
+        margin: 1px 0 0;
+        position: relative;
+    }
+
+    
 .title-album{
     text-align: center;
     color: #ffffff;
@@ -18,9 +30,6 @@
     border: 1px solid #fff;
 }
 
-.parallax-album .parallax-inner .container .row{
-    margin-bottom: 0;
-}
 
 .infos-pictures{
     max-width: 200px;

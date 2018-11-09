@@ -1,32 +1,24 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-materialize';
-import imgCamera from '../../images/camera.png';
-import { Parallax } from 'react-scroll-parallax';
+/*import imgCamera from '../../images/camera.png';*/
 
 const AboutMe = () => (
-    <Parallax
-        offsetYMin={-0}
-        offsetYMax={0}
-        className='parallax-about'
-    >
-        <Container>
-            <Row>
-                <Col s={12}>
-                    <div className="box-photo-me">
-                        <img src={imgCamera} className="responsive-img" alt="Tainá Renata Fotos" />
-                        <div className="box-text-me">
-                            <h3>
-                                Tainá
-                            </h3>
-                            <p> Front End Developer<br />
-                                Amante dos animais e natureza.<br /> Desenvolvedora por profissão e fotógrafa iniciante por hobby ♡
-                            </p>
-                        </div>
+    <section className='parallax-about'>
+        <div className="container">
+            <div>
+                <div className="box-photo-me">
+                   
+                    <div className="box-text-me">
+                        <h3>
+                            Tainá
+                        </h3>
+                        <p> Front End Developer<br />
+                            Amante dos animais e natureza.<br /> Desenvolvedora por profissão e fotógrafa iniciante por hobby ♡
+                        </p>
                     </div>
-                </Col>
-            </Row>
-        </Container>
-    </Parallax>
+                </div>
+            </div>
+        </div>
+    </section>
 );
 
 export default AboutMe;
